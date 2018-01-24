@@ -1,0 +1,463 @@
+/* reset padding and margins */
+
+@import "compass/css3";
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Josefin Slab', serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+/* items */
+
+.item {
+	height: 200px;
+	width: 24.77%;
+	color: black;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0px;
+	bottom: 20px;
+	right: 30px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 200;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+	transition: all 500ms ease;
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/* transition: all 500ms ease; */
+}
+
+.num {
+	font-size: 20px;
+	text-align: left;
+ 	padding: 15px 0px 0px 20px;
+    margin: 0;
+    z-index: 3;
+}
+
+.chit {
+	font-size: 35px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+    margin: 0;
+    z-index: 3;
+}
+
+
+/* BUTTONS */
+/* 1 */
+
+#button-1 {
+	background-color: rgb(168, 147, 255);
+}
+
+#button-1:hover {
+	transform: 
+		rotate(45deg)
+		scale(1.5)
+		translate(50px,100px);
+	opacity: .3;
+}
+
+/* 2 */
+
+#button-2 {
+	background-color: grey;
+}
+
+#button-2::after {
+	content: 'enter';
+	color: white;
+}
+
+
+#button-2:hover::after {
+	content: 'leave';
+	color: rgb(255, 139, 77);
+}
+
+/* 3 */
+
+#button-3 {
+	background-color: rgb(255, 212, 51);
+}
+
+#button-3:active {
+	background-color: pink;
+	opacity: 1;
+}
+
+/* 4 */
+
+#button-4::before {
+	background-color: rgb(201, 233, 219);
+}
+
+
+
+.pinkcircle {
+    background-color: pink;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 2px 10px 20px 90px;
+    transition: all 500ms ease;
+}
+
+.pinkcircle:active {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+
+#button-4:hover{
+}
+
+
+/* 5 */
+
+.btn {
+ 	top: 55%;
+ 	left: 50%;
+ 	font-size: 24px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: #fff;
+  	background-color: rgb(79, 214, 45);
+  	border: none;
+  	border-radius: 10%;
+  	box-shadow: 0 9px #999;
+  	height: 75px;
+  	width: 100px;
+  	z-index: 3;
+}
+
+.btn:hover {background-color: rgb(53, 190, 18);}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#button-5 {
+	background-color: rgb(233, 233, 233);
+}
+
+#button-5:hover::before {
+}
+
+/* 6 */
+
+#button-6 {
+	background-color: rgb(40, 150, 254);
+}
+
+#button-6::before {
+	transition: transform all ease 500ms;
+  	width: 150px;
+}
+
+#button-6:hover {
+	transform: skewX(-20deg);
+}
+
+/* 7 */
+
+#button-7{
+	background-color: rgb(255, 87, 50);
+	overflow: hidden;
+}
+
+#button-7::before {
+}
+
+
+#button-7:hover::after {
+}
+
+/* 8 */
+
+.plane {
+	color: white;
+	font-size: 100px;
+	transition: 2.3s all ease-in-out;
+}
+
+.plane:hover {
+	animation: spinfly 2.2s;
+}
+
+@keyframes spinfly {
+  50% {
+    transform: rotate(1080deg);
+  } 
+  100% {
+    transform: translate(150px, -150px);
+  }
+}
+
+#button-8 {
+	background-color: rgb(20, 59, 168);
+}
+
+#button-8::before {
+}
+
+
+#button-8:hover::after {
+}
+
+/* 9 */
+
+#button-9 {
+	background-color:rgb(221, 191, 144);
+}
+
+#button-9: hover {
+	background-color:rgb(229, 215, 99);
+	width: 50%;
+}
+
+
+/* 10 */
+
+
+#button-10 {
+	background-color: rgb(111, 173, 147);
+}
+
+
+#button-10:active {
+  	width: 49.54%;
+  	opacity: .5;
+}
+
+/* 11 */
+
+#button-11 {
+	background-color: rgb(193, 112, 234);
+}
+
+#button-11::before {
+	transform-origin: 0% 0%;
+  	transition: transform 4s;
+}
+
+#button-11:active {
+  	transform: rotate(180deg);
+}
+
+/* 12 */
+
+#button-12::before {
+}
+
+
+
+#button-12:hover::after {
+}
+
+
+
+
+/* 13 */
+
+
+.circle {
+  display: block;
+  position: absolute;
+  background: rgba(62, 182, 209);
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.circle.animate {
+  -webkit-animation: effect 0.65s linear;
+          animation: effect 0.65s linear;
+}
+
+@-webkit-keyframes effect {
+  100% {
+    opacity: .25;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+}
+
+@keyframes effect {
+  100% {
+    opacity: .25;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+}
+
+#button-13 {
+	background-color: rgb(199, 245, 255);
+	overflow: hidden;
+}
+
+#button-13::before {
+}
+
+
+#button-13:hover::after {
+}
+
+
+
+/* 14 */
+
+#button-14 {
+	background-color: rgb(216, 36, 164);
+}
+
+#button-14-active {
+	background-color: rgb(240, 123, 206);
+}
+
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	margin-left: 35%;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid rgb(240, 123, 206);
+}
+
+/* 15 */
+
+#button-15::before {
+}
+
+
+#button-15:hover::after {}
+
+/* 16 */
+
+.counts {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#button-16::before {
+}
+
+
+#button-16:hover::after {
+}
+
+/* 17 */
+
+#button-17::before {
+}
+
+
+#button-17:hover::after {
+}
+
+/* 18 */
+
+#button-18::before {
+}
+
+
+#button-18:hover::after {
+}
+
+/* 19 */
+
+.boxes {
+  	margin: 10px;
+}
+
+.box {
+ 	background: rgb(250, 171, 248);
+  	border-radius: 5px;
+  	display: inline-block;
+  	height: 40px;
+  	margin: 10px;
+  	width: 40px;
+ }
+  
+.container:activate .box {
+  transform: scale(1.7);
+}
+
+.box1 {
+  	transition: all 1.3s ease;
+}
+
+.box2 {
+  	transition: all 1.3s 0.5s ease;
+}
+
+.box3 {
+	transition: all 1.3s 1s ease;
+}
+
+#button-19 {
+	background-color: ;
+}
+
+/* 20 */
+
+#button-20 {
+	$btn-color: random-color($max:200);
+  	$btn-color-dark: shade($btn-color, 40%);
+  	color: tint($btn-color);
+  	content: '';
+    @include absolute(0,0,0,0);
+}
+
+#button-20::before {
+    right: -50px;
+    border-right: 50px solid transparent;
+    transform: translateX(-100%);
+  }
+  
+#button-20::after {
+    left: -50px;
+    border-left: 50px solid transparent;
+    transform: translateX(100%);
+  }
+
+#button-20:hover {
+    color:
+    tint($btn-color, 75%);
+    &:before { transform: translateX(-40%); }
+    &:after { transform: translateX(40%); }
+  }
+
+/* 21 */
+
+#button-21::before {;
+}
+
+
+#button-22:hover::after {
+}
