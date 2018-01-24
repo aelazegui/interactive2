@@ -51,11 +51,16 @@ $("#button-13").click(function(e){
 	y = e.pageY - element.offset().top - circle.height()/2;
 	
 	circle.css({top: y+'px', left: x+'px'}).addClass("animate");
-})
+});
 
-	$('#button-14').click(function() {
-		$(#button-14).toggleClass('#button-14-active'); //number changes the speed
-	});
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+};
+
+	//$('#button-14').click(function() {
+	//	$(item).toggleClass('#button-14-active'); //number changes the speed
+	//});
 
 	//$("#button-4").click(function() {
  	//	$('.pinkcircle').toggleClass('.T-ps-active');
