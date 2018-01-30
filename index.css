@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+	font-family: 'Dosis', sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration-style: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration-style: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(47, 254, 179);
+    text-decoration-style: none;
+}

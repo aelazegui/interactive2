@@ -202,10 +202,11 @@ body {
 .plane {
 	color: white;
 	font-size: 100px;
-	transition: 2.3s all ease-in-out;
+	transition: 2.3s ease all;
 }
 
-.plane:hover {
+.plane:hover,
+.plane:focus {
 	animation: spinfly 2.2s;
 }
 
@@ -218,15 +219,21 @@ body {
   }
 }
 
+@keyframes spinflyback {
+  50% {
+    transform: translate(-150px, 150px);
+  } 
+  100% {
+    transform: rotate(-1080deg);
+  }
+}
+
+.plane:after {
+  animation: spinflyback 2.2s;
+}
+
 #button-8 {
 	background-color: rgb(20, 59, 168);
-}
-
-#button-8::before {
-}
-
-
-#button-8:hover::after {
 }
 
 /* 9 */
@@ -338,7 +345,11 @@ body {
 
 #button-14{
 	background-color: rgb(216, 36, 164);
+  transition: 3s ease all;
+  overflow: hidden;
 }
+
+
 
 .triangle-up {
 	width: 0;
@@ -347,6 +358,11 @@ body {
 	border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
 	border-bottom: 100px solid rgb(240, 123, 206);
+
+}
+
+.triangle-big {
+  transform: scale(5);
 }
 
 /* 15 */
@@ -420,6 +436,9 @@ body {
 /* 16 */
 
 
+#button-16 {
+  background-color: rgb(246, 169, 76);
+}
 
 #button-16::before {
 }

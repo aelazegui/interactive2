@@ -2,6 +2,8 @@ $(document).ready(function(){
 	
 // when you click button 3, the following function happens
 
+
+//button 7
 	$('#button-7').click(function() {
 		$(this).animate({
 			opacity: 0,
@@ -29,7 +31,7 @@ $(document).ready(function(){
 		$(".counts").text(counts1);
 	});
 
-
+//button 13
 	var element, circle, d, x, y;
 $("#button-13").click(function(e){
   
@@ -57,6 +59,19 @@ function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 };
+
+
+//button 14
+$('#button-14').on('click',function (event) {
+	event.preventDefault();
+	$(".triangle-up").addClass('triangle-big');
+	$(".this").removeClass('triangle-up');
+});
+
+//button 16
+$('#button-16').hover(
+	function(){
+	$("#button-16").addClass('bounce');
 
 	//$('#button-14').click(function() {
 	//	$(item).toggleClass('#button-14-active'); //number changes the speed
