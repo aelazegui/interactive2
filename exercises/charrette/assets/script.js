@@ -73,6 +73,8 @@ $('#button-16').hover(
 	function(){
 	$("#button-16").addClass('bounce');
 
+});
+
 	//$('#button-14').click(function() {
 	//	$(item).toggleClass('#button-14-active'); //number changes the speed
 	//});
