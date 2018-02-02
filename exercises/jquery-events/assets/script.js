@@ -28,7 +28,7 @@ $(document).ready(function(){
 		// change div with the id "element"s CSS when you move your mouse 
 		$('#element').css({
 			'transform' : 'skew(' + xPos + 'deg)',
-			'background-color' : 'rgb('+ xPos/5 + ', ' + xPos/3 + ', ' + (xPos*xPos)	/10 + ')',
+			'background-color' : 'rgb('+ /*xPos/5 */ Math.floor((Math.random() * 300) + 1) + ', ' + xPos/Math.floor((Math.random() * 10) + 1) + ', ' + (xPos*Math.floor((Math.random() * 20) - Math.floor((Math.random() * 10) + 1)))	/10 + ')',
 		});
 	});
 
