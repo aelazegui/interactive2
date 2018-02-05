@@ -2,21 +2,26 @@
 
 body {
 	font-family: 'Dosis', sans-serif;
+	background-color: rgb(75, 78, 233);
+	color: white;
+	letter-spacing: .1px;
 }
 
+
+
 a:link {
-    color: black;
-    text-decoration-style: none;
+    color: white;
+    text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: black;
-    text-decoration-style: none;
+    color: white;
+    text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
     color: rgb(47, 254, 179);
-    text-decoration-style: none;
+    text-decoration: none;
 }

@@ -1,28 +1,41 @@
 /* reset padding and margins */
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 * {
 	margin: 0px;
 	padding: 0px;
 }
 
 body {
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
+
+
 
 /* container */
 
 .container {
 	height: 10000px;
-	width: 150px;
 	position: relative;
     background: linear-gradient(white, black); 
+}
+
+.prompt {
+	position: relative;
+	margin-left: 150px;
+	margin-top: 20px;
+	width: 250px;
+	font-size: 10px;
+	float: left;
+	color: rgb(169, 118, 243);
 }
 
 #values {
 	position: fixed;
 	top: 20px;
 	left: 20px;
-	color: red;
+	color: rgb(169, 118, 243);
 }
 
 #element {
