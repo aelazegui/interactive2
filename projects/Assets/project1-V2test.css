@@ -32,10 +32,16 @@ body {
 }
 
 .clear {
-	width: 100vw;
-	height: 20px;
-	overflow: hidden;
+	width: 500px;
+	height: 1000px;
 	clear: both !important;
+	display: flex;
+	flex-flow: row wrap;
+	writing-mode: vertical-lr;
+}
+
+#row-2 {
+	float: left;
 }
 
 .br-red .item {
