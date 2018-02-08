@@ -6,13 +6,11 @@ $(document).ready(function(){
 //button 7
 	$('.item').click(function() {
 		$(this).animate({
-			opacity: 0,
-			marginLeft: '40%',
-		}, 200 ); //number changes the speed
+			opacity: 1,
+			marginLeft: Math.floor((Math.random()'px' * 500) + 1) + '%',
+		}, 100 ); //number changes the speed
 		$( "this" ).remove()
 	});
-
-/* if $('.item') moves to the right,  make the one above it move down?
 
 
 
