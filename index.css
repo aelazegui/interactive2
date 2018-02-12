@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,400');
+
 
 body {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 100;
 	background-color: rgb(27, 6, 102);
 	color: white;
+	line-height: 20px;
 	letter-spacing: .5px;
 }
 
+h1 {
+	font-weight: 300;
+	letter-spacing: 1px;
+}
 
+h2 {
+	font-weight: 300;
+}
 
 a:link {
     color: white;

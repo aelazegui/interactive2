@@ -6,16 +6,19 @@
 body {
 	font-family: 'Josefin Slab', serif;
 	background-color: rgb(8, 128, 199);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 
 /* container */
 
 .container {
 	position: relative;
-	width: 129vw;
+	width: 125vw;
 	height: 100vh;
-	float: left;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 
@@ -25,17 +28,16 @@ body {
 	opacity: 1;
     height: 50px;
     width: 50px;
-    display: inline-block;
+/*    display: inline-block;*/
     /* overflow: hidden; */
     margin: 0px;
     /* bottom: 20px; */
     /* right: 30px; */
-/*    float: left;*/
-	align-content: flex-start;
+	/* float: left;*/
     transition: all 500ms ease;
 
 	/* comment out 'float: left;' to have items stack in a single column */
-	float: left; 
+	float: right; 
 	transition: all 500ms ease
 }
 
@@ -46,8 +48,8 @@ body {
     /*width: 50px;*/
     height: 200px;
     /* clear: both !important; */
-    /* display: flex; */
-    flex-flow: row nowrap;
+    flex-flow: row-reverse wrap;
+	align-content: flex-end;
     writing-mode: vertical-lr;
     /* border: .25px solid aquamarine; */
     float: left;
@@ -85,106 +87,130 @@ body {
 /*justify-content: */
 
 
-#row-1 {
+.row-1 {
 	min-width: 300px;
 	background-color: rgb(62, 213, 146); /* mint green */
 }
-#row-1 .item {
+
+.row-1:nth-child(4) .item {
+	background-color: rgb(226, 3, 59); /* red */
+	align-items: flex-start;
+	float: left;
+}
+
+.row-1 .item {
 	background-color: rgb(226, 3, 59); /* red */
 }
 
-#row-2 {
+.row-2 {
 	background-color: rgb(8, 199, 173); /* teal green */
 	align-items: flex-start;
 }
-#row-2 .item {
+.row-2 .item {
 	background-color: rgb(255, 122, 2); /* orange */
 	align-self: flex-start;
 }
 
 
-#row-3 {
+.row-3 {
 	background-color: rgb(8, 128, 199); /* blue */
 }
-#row-3 .item {
+.row-3 .item {
 	background-color: rgb(255, 139, 34); /* bright orange */
 }
 
 
-#row-4 {
+.row-4 {
 	min-width: 300px;
 	background-color: rgb(16, 75, 161); /* dark blue */
 }
-#row-4 .item {
+.row-4 .item {
 	background-color: rgb(255, 195, 2); /* yellow */
+	float: left; 
+	align-items: flex-end;
 }
 
 
-#row-5 {
+.row-5 {
 	background-color: rgb(91, 3, 109); /* dark plum */
 	min-width: 200px;
 }
-#row-5 .item {
+.row-5:nth-child(odd) .item {
 	background-color: rgb(232, 235, 63); /* yellow green*/
+		align-items: flex-start !important;
+	float: right !important; 
 }
 
+.row-5:nth-child(even) .item {
+	background-color: rgb(232, 235, 63); /* yellow green*/
+	align-items: flex-end !important;
+	float: right !important; 
 
-#row-6 {
+}
+
+.row-6 {
 	background-color: rgb(147, 6, 97); /* berry fuchsia */
 }
-#row-6 .item {
+.row-6 .item {
 	background-color: rgb(176, 228, 96); /* leaf green */
+	float: left; 
+	align-content: flex-start;
 }
 
 
-#row-7 {
+.row-7 {
 	background-color: rgb(226, 3, 59); /* red */
 }
-#row-7 .item {
+.row-7 .item {
 	background-color: rgb(62, 213, 146); /* mint green */
 }
 
 
-#row-8 {
+.row-8 {
 	background-color: rgb(255, 122, 2); /* orange */
 }
-#row-8 .item {
+.row-8 .item {
 	background-color: rgb(8, 199, 173); /* teal green */
 }
 
 
-#row-9 {
+.row-9 {
 	background-color: rgb(255, 139, 34); /* bright orange */
 }
-#row-9 .item {
+.row-9 .item {
 	background-color: rgb(8, 128, 199); /* blue */
+	
 }
 
 
-#row-10 {
+.row-10 {
 	background-color: rgb(255, 195, 2); /* yellow */
 	min-width: 150px;
+	align-content: flex-end;
 }
-#row-10 .item {
+.row-10 .item {
 	background-color: rgb(16, 75, 161); /* dark blue */
+	float: left; 
 }
 
 
-#row-11 {
+.row-11 {
 	background-color: rgb(232, 235, 63); /* yellow green*/
 	min-width: 250px;
 }
-#row-11 .item {
+.row-11 .item {
 	background-color: rgb(91, 3, 109); /* dark plum */
 }
 
 
-#row-12 {
+.row-12 {
 	background-color: rgb(176, 228, 96); /* leaf green */
 	min-width: 200px;
 }
-#row-12 .item {
+.row-12 .item {
 	background-color: rgb(147, 6, 97); /* berry fuchsia */
+	align-items: flex-end;
+	float: left; 
 }
 
 
