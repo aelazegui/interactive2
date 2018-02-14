@@ -20,6 +20,39 @@ h2 {
 	font-weight: 300;
 }
 
+.mainchick {
+	margin-left: 260px;
+	margin-top: 150px;
+}
+
+.firstcolumn {
+	margin-left: 260px;
+}
+
+.sidebae {
+	float: left;
+	text-align: left;
+	width: 200px;
+}
+
+.mainchicktwo {
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 150px;
+}
+
+.mainchicktwo {
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 500px;
+}
+
+.secondcolumn {
+	position: absolute;
+	margin-left: 600px;
+	margin-top: -100px;
+}
+
 a:link {
     color: white;
     text-decoration: none;
@@ -33,6 +66,6 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: rgb(47, 254, 179);
+    color: rgb(255, 98, 198);
     text-decoration: none;
 }
