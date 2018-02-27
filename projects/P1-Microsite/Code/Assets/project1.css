@@ -1,0 +1,58 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Josefin Slab', serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+/* items */
+
+.item {
+	height: 20px;
+	width: 3.57%;
+	display: inline-block;
+	overflow: hidden;
+	background-color: pink;
+	margin: 0px;
+	bottom: 20px;
+	right: 30px;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+	transition: all 500ms ease
+}
+
+.clear {
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+	clear: both !important;
+	display: flex;
+	flex-flow: column wrap;
+	writing-mode: vertical-lr;
+}
+
+.br-red .item {
+	background-color: rgb(255, 229, 37);
+}
+
+.orange .item {
+	background-color: rgb(255, 176, 37);
+}
+
+.yellow .item {
+	background-color: rgb(255, 98, 98);
+}
+
+
+
+
