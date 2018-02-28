@@ -1,0 +1,161 @@
+.letter {
+	height: 1300px;
+	width:500px;
+	transform: scale(.25);
+	position: absolute;
+	border: 1px solid transparent;
+	top: 0px;
+	left: 0px;
+}
+
+#a {
+	left: 20px;
+	top: 20px;
+}
+
+#b {
+	left: 150px;
+	top: 20px;
+}
+
+#c {
+	left: 275px;
+	top: 20px;
+}
+
+.left1{
+	left: 100px;
+}
+
+.left2{
+	left: 200px;
+}
+
+.left3{
+	left: 300px;
+}
+
+.left4{
+	left: 400px;
+}
+
+.top0{
+	top: 200px;
+}
+
+.top-1{
+	top: 100px;
+}
+
+.top1{
+	top: 300px;
+}
+
+.top2{
+	top: 400px;
+}
+
+.top3{
+	top: 500px;
+}
+
+.top4{
+	top: 600px;
+}
+
+.top5{
+	top: 700px;
+}
+
+.top6{
+	top: 800px;
+}
+
+.top7{
+	top: 900px;
+}
+
+.top8{
+	top: 1000px;
+}
+
+.top9{
+	top: 1100px;
+}
+
+.top10{
+	top: 1200px;
+}
+
+.top11{
+	top: 1300px;
+}
+
+.top12{
+	top: 1400px;
+}
+
+.top13{
+	top: 1500px;
+}
+
+.triangleBL {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid black;
+	border-right: 100px solid transparent;
+	position: absolute;
+}
+
+.triangleBR {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid black;
+	border-left: 100px solid transparent;
+	position: absolute;
+}
+
+.triangleTR {
+	width: 0;
+	height: 0;
+	border-top: 100px solid black;
+	border-left: 100px solid transparent;
+	position: absolute;
+
+}
+
+.triangleTL {
+	width: 0;
+	height: 0;
+	border-top: 100px solid black;
+	border-right: 100px solid transparent;
+	position: absolute;
+}
+
+.rectangle2 {
+	width: 100px;
+	height: 200px;
+	background: black;
+	position: absolute;
+}
+
+.rectangle3 {
+	width: 100px;
+	height: 300px;
+	background: black;
+	position: absolute;
+}
+
+.rectangle4 {
+	width: 100px;
+	height: 400px;
+	background: black;
+	position: absolute;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: black;
+	position: absolute;
+}
