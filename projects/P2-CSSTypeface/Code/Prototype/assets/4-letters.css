@@ -1,3 +1,7 @@
+.body {
+	overflow: hidden;
+}
+
 .letter {
 	height: 1300px;
 	width:500px;
