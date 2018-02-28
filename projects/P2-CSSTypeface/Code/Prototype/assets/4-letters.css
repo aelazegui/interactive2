@@ -1,5 +1,6 @@
 .body {
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .letter {
@@ -26,6 +27,12 @@
 	left: 275px;
 	top: 20px;
 }
+
+#d {
+	left: 400px;
+	top: 20px;
+}
+
 
 .left1{
 	left: 100px;
