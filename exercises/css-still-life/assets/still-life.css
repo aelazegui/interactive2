@@ -435,6 +435,17 @@ div {
 
 /* waterbottle */
 
+
+.WBGradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3e5e8+0,efeff0+22,b4bece+50,efeff0+82,e3e5e8+99 */
+background, border: #e3e5e8 !importantt; /* Old browsers */
+background: -moz-linear-gradient(left,  #e3e5e8 0%, #efeff0 22%, #b4bece 50%, #efeff0 82%, #e3e5e8 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #e3e5e8 0%,#efeff0 22%,#b4bece 50%,#efeff0 82%,#e3e5e8 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #e3e5e8 0%,#efeff0 22%,#b4bece 50%,#efeff0 82%,#e3e5e8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e5e8', endColorstr='#e3e5e8',GradientType=1 ); /* IE6-9 */
+
+}
+
 .waterbottle{
 	width: 200px;
 	height: 400px;
@@ -481,6 +492,15 @@ div {
 	top: 109px;
 }
 
+.waterbottlebottomlabel{
+	background: rgba(195, 201, 218, 0.42);
+	border-radius: 20%;
+	height: 13px;
+	width: 145px;
+	left: 25px;
+	top: 189px;
+}
+
 .waterbottlelabel{
 	width: 145px;
 	height: 70px;
@@ -489,8 +509,66 @@ div {
 	top: 120px;
 }
 
+.waterbottletrap{
+	border-top: 65px solid rgba(195, 201, 218, 0.42);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-radius: 10%;
+	left: 25px;
+	height: 0;
+	width: 105px;
+	top: 200px;
+}
+
+.waterbottleoval{
+	border-bottom: 30px solid rgba(195, 201, 218, 0.42);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-radius: 11%;
+	left: 28px;
+	height: 0;
+	width: 105px;
+	top: 265px;
+}
+
+.waterbottleoval2{
+	border-top: 10px solid rgba(195, 201, 218, 0.42);
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	left: 28px;
+	height: 0;
+	width: 130px;
+	top: 295px;
+}
+
+
+.waterbottleoval3{
+	border-bottom: 20px solid rgba(195, 201, 218, 0.42);
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	left: 28px;
+	height: 0;
+	width: 130px;
+	top: 305px;
+}
+
+.waterbottlebottom{
+	left: 28px;
+	top: 330px;
+	height: 30;
+	width: 127px;
+	background: rgba(195, 201, 218, 0.42);
+	border-radius: 3%;
+	z-index: 2;
+	
+}
 
 /* waterbottle end */
+
+
+
+
+
 
 #oval {
 	width: 200px;
