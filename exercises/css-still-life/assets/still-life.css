@@ -902,6 +902,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e5e8', end
 }
 
 
+#burst-13:hover{
+-webkit-transform: rotate(360deg)  scale(3.3);
+        -ms-transform: rotate(360deg) scale(3.3);
+        transform: rotate(360deg) scale(3.3);
+	 animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#burst-14:hover{
+-webkit-transform: rotate(360deg) scale(3.3);
+        -ms-transform: rotate(360deg) scale(3.3);
+        transform: rotate(360deg) scale(3.3);
+	 animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#burst-12:hover{
+-webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+	 animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg) scale(1);}
+    75% {transform: rotate(360deg) scale(3.3);}
+	100% {transform: rotate(0deg) scale(1);}
+}
+
 #burst-13 {
     background: #474179;
     width: 20px;
