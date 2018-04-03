@@ -70,12 +70,13 @@ p {position: absolute;}
 
 .container:hover #triangle-up {
 		animation-name: empty;
-		animation-duration: 3s; animation-direction: alternate; animation-timing-function: ease-in-out;
+		animation-duration: 1.5s; animation-duration: infinite; animation-direction: alternate; animation-timing-function: ease-in-out;
 }
 
 @keyframes empty {
-    from {transform:rotateZ(60deg); transform-origin: bottom;}
-    to {transform:rotateZ(-60deg); transform-origin: bottom;}
+    0% {transform:rotateZ(60deg); transform-origin: bottom;}
+    50% {transform:rotateZ(-60deg); transform-origin: bottom;}
+	100% {transform:rotateZ(60deg); transform-origin: bottom;}
 }
 
 .container {
