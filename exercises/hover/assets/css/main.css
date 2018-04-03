@@ -33,6 +33,7 @@ p {position: absolute;}
 	width: 25px;
 	margin-left: 25vw;
 	margin-top: 30vh;
+	border-radius: 10px;
 }
 
 .largetick2 {
@@ -40,12 +41,14 @@ p {position: absolute;}
 	width: 25px;
 	margin-left: 75vw;
 	margin-top: 30vh;
+	border-radius: 10px;
 }
 
 .medtick {
 	height: 150px;
 	width: 15px;
 	background-color: white;
+	border-radius: 20px;
 }
 
 .red {
@@ -70,7 +73,7 @@ p {position: absolute;}
 
 .container:hover #triangle-up {
 		animation-name: empty;
-		animation-duration: 1.5s; animation-duration: infinite; animation-direction: alternate; animation-timing-function: ease-in-out;
+		animation-duration: 2.5s; animation-iteration-count: infinite; animation-direction:normal; animation-timing-function: ease-in-out;
 }
 
 @keyframes empty {
