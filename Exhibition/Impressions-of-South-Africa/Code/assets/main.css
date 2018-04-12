@@ -1,0 +1,97 @@
+body {
+  background-image:
+  radial-gradient(circle at 50% 100%, black, #242424 );
+}
+
+img {
+	position: absolute;
+}
+
+.photo {
+	width: auto;
+	height: auto;
+}
+
+img:hover {
+	animation-name: imgup;
+	animation-duration: 1.5s;
+	animation-direction: forwards;
+	transition-timing-function: ease-in-out;
+}
+
+@keyframes imgup {
+	0% {transform: translateY(0px);}
+	100% {transform: translateY(-50px);}
+}
+
+.container {
+	position: relative;
+	height: 700px;
+	width: 2000px;
+}
+
+.resizeh25 {
+	height: 400px;
+	width:auto;
+}
+
+.resizew25 {
+	height: auto;
+	width:400px;
+}
+
+#savethepress {
+	height: 70%;
+	width: auto;
+	top: 25vh;
+	left: 20vw;
+	z-index: 100;
+	opacity: .5;
+}
+
+#UDF {
+	width: 40%;
+	height: auto;
+	top: 40vh;
+	left: 50vw;
+	z-index: 100;
+	opacity: .5;
+}
+
+#Struckarock {
+	width: 15%;
+	height: auto;
+	z-index: 90;
+	opacity: .5;
+}
+
+.testsquare {
+	height: 240px;
+	width: 230px;
+	top: 50vh;
+	left: 30vw;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.rowone {
+	z-index: 100;
+}
+
+.rowtwo {
+	z-index: 90;
+	width: 500px;
+	height: 200px;
+	top: 50px;
+}
+
+.pushback {
+	transform: scale(.5) translate(500px);
+}
+
+.comeforward {
+	z-index: 1000 !important;
+	opacity: 1;
+}
