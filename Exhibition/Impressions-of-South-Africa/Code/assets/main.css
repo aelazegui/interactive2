@@ -1,10 +1,17 @@
 body {
-  background-image:
-  radial-gradient(circle at 50% 100%, black, #242424 );
+	height: 100%;
+	width: 100%;
+	background-color: black;
+  	background-image:
+  	radial-gradient(circle at 50% 100%, black, #151515 );
 }
 
 img {
 	position: absolute;
+	opacity: .5;
+	transition: 
+		opacity .6s linear, 
+		transform 1s ease-in-out; 
 }
 
 .photo {
@@ -12,22 +19,101 @@ img {
 	height: auto;
 }
 
+/*
 img:hover {
 	animation-name: imgup;
 	animation-duration: 1.5s;
 	animation-direction: forwards;
 	transition-timing-function: ease-in-out;
 }
+*/
 
-@keyframes imgup {
-	0% {transform: translateY(0px);}
-	100% {transform: translateY(-50px);}
+.hoverimg {
+	transform: translateY(-50px);
+	opacity: 1 !important;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	transition-timing-function: ease-in-out;
 }
 
 .container {
 	position: relative;
 	height: 700px;
 	width: 2000px;
+}
+
+.GillSansNova-CnBook { 
+	font-family: GillSansNova-CnBook;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-CnLight { 
+	font-family: GillSansNova-CnLight;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-CnLightIt { 
+	font-family: GillSansNova-CnLightIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-ExtraCondBold { 
+	font-family: GillSansNova-ExtraCondBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-Light { 
+	font-family: GillSansNova-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: GillSansNova-ExtraCondBold;
+	color: #C9C9C9;
+	font-size: 60px;
+	margin-left: 24vw;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.worktitles {
+	position: fixed;
+	width: 600px;
+	height: 140px;
+	margin-top: 80px;
+	margin-left: 700px;
+	display: none;
+}
+
+.titles {
+	font-size: 50px;
+	color: white;
+	display: none;
+}
+
+p.titles {margin-top: -59px;}
+
+.artist {font-family: GillSansNova-CnLight}
+
+.workname {font-familY: GillSansNova-CnLightIt}
+
+.year {font-family: GillSansNova-CnLight}
+
+.bodycopy {
+	position: fixed;
+	z-index: 100;
+	font-size: 17px;
+	letter-spacing: .4px;
+	line-height: 27px;
+	font-family: GillSansNova-Light;
+	font-weight: normal;
+	color: white;
+	width: 490px;
+	margin-left: 700px;
+	margin-top: 200px;
+	display: none;
 }
 
 .resizeh25 {
@@ -41,29 +127,107 @@ img:hover {
 }
 
 #savethepress {
-	height: 70%;
+	height: 55%;
 	width: auto;
-	top: 25vh;
+	top: 55vh;
 	left: 20vw;
-	z-index: 100;
-	opacity: .5;
+	opacity: .6;
+	z-index: 5;
 }
 
 #UDF {
-	width: 40%;
-	height: auto;
-	top: 40vh;
+	height: 30%;
+	top: 48vh;
 	left: 50vw;
-	z-index: 100;
-	opacity: .5;
+	opacity: .6;
+	z-index: 5;
+}
+
+#nadir13 {
+	height: 25%;
+	top: 35vh;
+	left: -5vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#wearenot {
+	height: 30%;
+	top: 33vh;
+	left: 25vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#blackandblue1 {
+	height: 25%;
+	top: 28vh;
+	left: 55vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#nadir15 {
+	height: 18%;
+	top: 21vh;
+	left: 5vw;
+	opacity: .25;
+	z-index: 3;
+}
+
+#hiv {
+	height: 25%;
+	top: 20vh;
+	left: 42vw;
+	opacity: .25;
+	z-index: 3;
+}
+
+#anend {
+	height: 20%;
+	top: 15vh;
+	left: 87vw;
+	opacity: .25;
+	z-index: 3;
 }
 
 #Struckarock {
-	width: 15%;
+	width: 4%;
+	left: 16vw;
+	top: 10vh;
 	height: auto;
-	z-index: 90;
-	opacity: .5;
+	opacity: .15;
+	z-index: 2;
 }
+
+#GojeMeeting {
+	height: 13%;
+	top: 10vh;
+	left: 37vw;
+	opacity: .15;
+	z-index: 2;
+}
+
+#CPlatter {
+	width: 6%;
+	top: -2vh;
+	left: 25vw;
+	opacity: .07;
+	z-index: 1;
+}
+
+
+#MayDay {
+	height: 14%;
+	top: -2vh;
+	left: 55vw;
+	opacity: .07;
+	z-index: 1;
+}
+
+
+
+
 
 .testsquare {
 	height: 240px;
@@ -79,7 +243,6 @@ img:hover {
 .rowone {
 	z-index: 100;
 }
-
 .rowtwo {
 	z-index: 90;
 	width: 500px;
@@ -87,11 +250,32 @@ img:hover {
 	top: 50px;
 }
 
+.blurimg {
+	filter: blur(4px);
+}
+
 .pushback {
-	transform: scale(.5) translate(500px);
+	transform: scale(.45) translate(-100px, -300px);
+	animation-duration: 1s;
+	transition-timing-function: ease-in-out;
 }
 
 .comeforward {
 	z-index: 1000 !important;
-	opacity: 1;
+	opacity: 1 !important;
+	height: 700px !important;
+	position: fixed;
+	width: auto;
+	top: 15vh;
+	left: 25vw;
+	animation-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+.makeroom {
+	transform: scale(.3);
+	position: absolute;
+	top: -100px;
+	transition-timing-function: ease-in-out;
+	animation-duration: 1s;
 }
