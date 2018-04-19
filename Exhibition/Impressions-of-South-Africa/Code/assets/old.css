@@ -10,15 +10,8 @@ body {
 img {
 	position: absolute;
 	transition: 
-		opacity .5s linear, 
+		opacity .6s linear, 
 		transform 1s ease-in-out;
-}
-
-.img.comefoward {
-		transition: 
-		opacity .2s linear, 
-		transform 1s ease-in-out;
-		transition-delay: 1s;
 }
 
 .hidden {
@@ -90,7 +83,7 @@ h1 {
 	color: #C9C9C9;
 	font-size: 60px;
 	margin-left: 24vw;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -274,7 +267,7 @@ p.titles {margin-top: -59px;}
 .pushback {
 	transform: scale(.45) translate(-100px, -300px);
 	transform-origin: top left;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -286,6 +279,7 @@ p.titles {margin-top: -59px;}
 	width: auto;
 	top: 15vh;
 	left: 25vw;
+	animation-duration: 1s;
 	transition-timing-function: ease-in-out;
 }
 

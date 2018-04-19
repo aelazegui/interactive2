@@ -14,17 +14,14 @@ $(document).ready(function(){
   		$(this).removeClass("hoverimg");
 	});
 	
-	$("img.pushback").hover( 
-		function (){ // Mouse over
-		$(this).addClass("hoverimg");
-	}, function() { // Mouse out
-  		$(this).removeClass("hoverimg");
-	});
-	
 	
 	$('img').on('click', function (){
 		if ($('img').hasClass('comeforward')) {
 			
+			//$(this).addClass("makeroom");
+			$(this).animate({top: '50px', left: '50px'}, 1500, function () {
+			console.log('i moved it!');
+	});
 		} else {
 			$('img:not(this)')
 				.addClass("pushback")
@@ -33,23 +30,11 @@ $(document).ready(function(){
 		}
 	});
 	
-	$(document).click( function(){
-    	$('img.comeforward').removeClass('comeforward');
-    	$('img.pushback').removeClass('pushback');
-});
 	
+	$('#savethepress.comeforward').click(function(){
+		$(".worktitles .bodycopy").fadeIn();
+	});
 	
-//	
-
-}); //end jquery
-
-
-	
-
-//	$('#savethepress.comeforward').click(function(){
-//		$(".worktitles .bodycopy").fadeIn();
-//	});
-//	
 	
 //	
 //	$('img.comeForward').on('click', function(){ 
@@ -206,6 +191,7 @@ $(document).ready(function(){
 //document.getElementById("img1").style.zIndex = "100"
 	
 	
+});
 
 //maybe on img click, a duplicate comes forward & opacity increases
 //and the actual one opacity 0 while the group pushes into background.
