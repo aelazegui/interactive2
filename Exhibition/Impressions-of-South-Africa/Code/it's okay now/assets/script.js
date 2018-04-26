@@ -25,10 +25,12 @@ $(document).ready(function(){
 
 	$('img').on('click', function (){
 		$('img.comeforward').removeClass('comeforward');
+		$(this).removeClass('pushback');
 		
 		$('.worktitles').hide();
 		$('.bodycopy').hide();
 		
+		$('img').not(this).addClass("pushback");
 		$(this).addClass('comeforward');
 		$(this).siblings().show();
 	});
