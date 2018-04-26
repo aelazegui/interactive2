@@ -132,7 +132,7 @@ div {
 /*angle*/
 
 .ff2 {
-	left: -2px;
+	left: 0px;
 }
 
 .ee2 {
@@ -185,7 +185,7 @@ div {
 /*full shape*/
 
 .ff {
-	left: 0px;
+	left: -.5px;
 }
 
 .ee {
@@ -215,7 +215,8 @@ div {
 
 .K1 {top: 0px;}
 
-.L1 {top: 14px;}
+/*VV changed VV*/
+.L1 {top: 14.5px;}
 
 .M1 {top: 30px;}
 
@@ -223,13 +224,13 @@ div {
 
 .B1 {top: 60px;}
 
-.C1 {top: 80px;}
+.C1 {top: 74px;}
 
 .D1 {top: 90px;}
 
 .E1 {top: 108px;}
 
-.F1 {top: 120px;}
+.F1 {top: 118px;}
 
 .G1 {top: 135px;}
 
@@ -512,7 +513,7 @@ div {
 	width: 21.47px;
 	background: #f0aaff;
 	transform: rotate(-45deg);
-	transform-origin: top;
+	transform-origin: top left;
 }
 
 .dline-d {
@@ -520,6 +521,7 @@ div {
 	width: 21.47px;
 	background: #f0aaff;
 	transform: rotate(45deg);
+	transform-origin: top left;
 }
 
 .hline {

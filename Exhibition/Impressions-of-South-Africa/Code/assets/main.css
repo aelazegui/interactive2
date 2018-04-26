@@ -8,27 +8,38 @@ body {
 }
 
 img {
+	height: auto;
 	position: absolute;
 	transition: 
 		opacity .5s linear, 
 		transform 1s ease-in-out;
 }
 
+.screentobeblurred {
+	position: absolute;
+	width: 100vh;
+	height: 100vw;
+	z-index: 900;
+	background-color: black;
+	display: none;
+}
+
+.blurbg {
+	filter: blur(4px);
+}
+
+/*
 .img.comefoward {
 		transition: 
 		opacity .2s linear, 
 		transform 1s ease-in-out;
 		transition-delay: 1s;
 }
+*/
 
 .hidden {
 	opacity: 0;
 	transform: translateY(500px);
-}
-
-.photo {
-	width: auto;
-	height: auto;
 }
 
 .showme {
@@ -47,6 +58,7 @@ img:hover {
 
 .hoverimg {
 	transform: translateY(-50px);
+	transform-origin: top;
 	opacity: 1 !important;
 	animation-duration: 1.5s;
 	animation-direction: alternate;
@@ -55,8 +67,8 @@ img:hover {
 
 .container {
 	position: relative;
-	height: 700px;
-	width: 2000px;
+	height: 100vh;
+	width: 100vw;
 }
 
 .GillSansNova-CnBook { 
@@ -97,17 +109,21 @@ h1 {
 
 .worktitles {
 	position: fixed;
-	width: 600px;
+	z-index: 900;
+	width: 800px;
 	height: 140px;
 	margin-top: 80px;
-	margin-left: 700px;
+	margin-left: 600px;
 	display: none;
+}
+
+.showmedem {
+	display: block;
 }
 
 .titles {
 	font-size: 50px;
 	color: white;
-	display: none;
 }
 
 p.titles {margin-top: -59px;}
@@ -128,7 +144,7 @@ p.titles {margin-top: -59px;}
 	font-weight: normal;
 	color: white;
 	width: 490px;
-	margin-left: 700px;
+	margin-left: 600px;
 	margin-top: 200px;
 	display: none;
 }
@@ -144,8 +160,8 @@ p.titles {margin-top: -59px;}
 }
 
 #savethepress {
-	height: 55%;
-	width: auto;
+/*	height: 55%;*/
+	width: 10vw;
 	top: 55vh;
 	left: 20vw;
 	opacity: .6;
@@ -153,7 +169,8 @@ p.titles {margin-top: -59px;}
 }
 
 #UDF {
-	height: 30%;
+/*	height: 30%;*/
+	width: 10vw;
 	top: 48vh;
 	left: 50vw;
 	opacity: .6;
@@ -161,7 +178,8 @@ p.titles {margin-top: -59px;}
 }
 
 #nadir13 {
-	height: 25%;
+/*	height: 25%;*/
+width: 10vw;
 	top: 35vh;
 	left: -5vw;
 	opacity: .4;
@@ -169,7 +187,8 @@ p.titles {margin-top: -59px;}
 }
 
 #wearenot {
-	height: 30%;
+/*	height: 30%;*/
+	width: 10vw;
 	top: 33vh;
 	left: 25vw;
 	opacity: .4;
@@ -177,7 +196,8 @@ p.titles {margin-top: -59px;}
 }
 
 #blackandblue1 {
-	height: 25%;
+/*	height: 25%;*/
+	width: 10vw;
 	top: 28vh;
 	left: 55vw;
 	opacity: .4;
@@ -185,7 +205,8 @@ p.titles {margin-top: -59px;}
 }
 
 #nadir15 {
-	height: 18%;
+/*	height: 18%;*/
+	width: 10vw;
 	top: 21vh;
 	left: 5vw;
 	opacity: .25;
@@ -193,7 +214,8 @@ p.titles {margin-top: -59px;}
 }
 
 #hiv {
-	height: 25%;
+/*	height: 25%;*/
+	width: 10vw;
 	top: 20vh;
 	left: 42vw;
 	opacity: .25;
@@ -201,7 +223,8 @@ p.titles {margin-top: -59px;}
 }
 
 #anend {
-	height: 20%;
+/*	height: 20%;*/
+	width: 10vw;
 	top: 15vh;
 	left: 87vw;
 	opacity: .25;
@@ -209,16 +232,17 @@ p.titles {margin-top: -59px;}
 }
 
 #Struckarock {
-	width: 4%;
+	width: 10vw;
+/*	height: 4%;*/
 	left: 16vw;
 	top: 10vh;
-	height: auto;
 	opacity: .15;
 	z-index: 2;
 }
 
 #GojeMeeting {
-	height: 13%;
+/*	height: 13%;*/
+	width: 10vw;
 	top: 10vh;
 	left: 37vw;
 	opacity: .15;
@@ -226,7 +250,8 @@ p.titles {margin-top: -59px;}
 }
 
 #CPlatter {
-	width: 6%;
+	width: 10vw;
+/*	height: 6%;*/
 	top: 5vh;
 	left: 25vw;
 	opacity: .07;
@@ -235,7 +260,8 @@ p.titles {margin-top: -59px;}
 
 
 #MayDay {
-	height: 14%;
+	width: 10vw;
+/*	height: 14%;*/
 	top: 3vh;
 	left: 55vw;
 	opacity: .07;
@@ -253,20 +279,6 @@ p.titles {margin-top: -59px;}
 	left: 30vw;
 }
 
-.blue {
-	background-color: blue;
-}
-
-.rowone {
-	z-index: 100;
-}
-.rowtwo {
-	z-index: 90;
-	width: 500px;
-	height: 200px;
-	top: 50px;
-}
-
 .blurimg {
 	filter: blur(4px);
 }
@@ -278,16 +290,42 @@ p.titles {margin-top: -59px;}
 	transition-timing-function: ease-in-out;
 }
 
+.group-holder > div {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.textholder {
+	display: flex;
+}
+
+img.comeforward {
+	z-index: 1000 !important;
+	opacity: 1 !important;
+    max-width: 40vw !important;
+    position: absolute;
+	max-height: 40vh;
+	height: auto !important;
+	width: auto !important;
+    top: 25vh !important;
+    left: 5vw !important;
+	transform: translate()
+	transition-timing-function: ease-in-out;
+}
+
+/*
 .comeforward {
 	z-index: 1000 !important;
 	opacity: 1 !important;
 	height: 700px !important;
 	position: fixed;
 	width: auto;
-	top: 15vh;
-	left: 25vw;
+	top: 15vh !important;
+	left: 25vw !important;
 	transition-timing-function: ease-in-out;
 }
+*/
 
 .makeroom {
 	transform: scale(.3);

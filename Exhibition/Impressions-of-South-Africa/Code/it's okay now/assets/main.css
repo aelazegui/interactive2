@@ -1,0 +1,328 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+  	background-image:
+  	radial-gradient(circle at 50% 100%, black, #151515 );
+	overflow: hidden;
+}
+
+img {
+	height: auto;
+	position: absolute;
+	transition: 
+		opacity .5s linear, 
+		transform 1s ease-in-out;
+}
+
+.screentobeblurred {
+	position: absolute;
+	width: 100vh;
+	height: 100vw;
+	z-index: 900;
+	background-color: black;
+	display: none;
+}
+
+.blurbg {
+	filter: blur(4px);
+}
+
+/*
+.img.comefoward {
+		transition: 
+		opacity .2s linear, 
+		transform 1s ease-in-out;
+		transition-delay: 1s;
+}
+*/
+
+.hidden {
+	opacity: 0;
+	transform: translateY(500px);
+}
+
+.showme {
+	opacity: 1;
+	transform: translateY(-500px);
+}
+
+/*
+img:hover {
+	animation-name: imgup;
+	animation-duration: 1.5s;
+	animation-direction: forwards;
+	transition-timing-function: ease-in-out;
+}
+*/
+
+.hoverimg {
+	transform: translateY(-50px);
+	transform-origin: top;
+	opacity: 1 !important;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	transition-timing-function: ease-in-out;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+.GillSansNova-CnBook { 
+	font-family: GillSansNova-CnBook;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-CnLight { 
+	font-family: GillSansNova-CnLight;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-CnLightIt { 
+	font-family: GillSansNova-CnLightIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-ExtraCondBold { 
+	font-family: GillSansNova-ExtraCondBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.GillSansNova-Light { 
+	font-family: GillSansNova-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: GillSansNova-ExtraCondBold;
+	color: #C9C9C9;
+	font-size: 60px;
+	margin-left: 24vw;
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.worktitles {
+	position: fixed;
+	z-index: 900;
+	width: 800px;
+	height: 140px;
+	margin-top: 80px;
+	margin-left: 600px;
+	display: none;
+}
+
+.titles {
+	font-size: 50px;
+	color: white;
+}
+
+p.titles {margin-top: -59px;}
+
+.artist {font-family: GillSansNova-CnLight}
+
+.workname {font-familY: GillSansNova-CnLightIt}
+
+.year {font-family: GillSansNova-CnLight}
+
+.bodycopy {
+	position: fixed;
+	z-index: 100;
+	font-size: 17px;
+	letter-spacing: .4px;
+	line-height: 27px;
+	font-family: GillSansNova-Light;
+	font-weight: normal;
+	color: white;
+	width: 490px;
+	margin-left: 600px;
+	margin-top: 200px;
+	display: none;
+}
+
+.resizeh25 {
+	height: 400px;
+	width:auto;
+}
+
+.resizew25 {
+	height: auto;
+	width:400px;
+}
+
+#savethepress {
+/*	height: 55%;*/
+	width: 10vw;
+	top: 55vh;
+	left: 20vw;
+	opacity: .6;
+	z-index: 5;
+}
+
+#UDF {
+/*	height: 30%;*/
+	width: 10vw;
+	top: 48vh;
+	left: 50vw;
+	opacity: .6;
+	z-index: 5;
+}
+
+#nadir13 {
+/*	height: 25%;*/
+width: 10vw;
+	top: 35vh;
+	left: -5vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#wearenot {
+/*	height: 30%;*/
+	width: 10vw;
+	top: 33vh;
+	left: 25vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#blackandblue1 {
+/*	height: 25%;*/
+	width: 10vw;
+	top: 28vh;
+	left: 55vw;
+	opacity: .4;
+	z-index: 4;
+}
+
+#nadir15 {
+/*	height: 18%;*/
+	width: 10vw;
+	top: 21vh;
+	left: 5vw;
+	opacity: .25;
+	z-index: 3;
+}
+
+#hiv {
+/*	height: 25%;*/
+	width: 10vw;
+	top: 20vh;
+	left: 42vw;
+	opacity: .25;
+	z-index: 3;
+}
+
+#anend {
+/*	height: 20%;*/
+	width: 10vw;
+	top: 15vh;
+	left: 87vw;
+	opacity: .25;
+	z-index: 3;
+}
+
+#Struckarock {
+	width: 10vw;
+/*	height: 4%;*/
+	left: 16vw;
+	top: 10vh;
+	opacity: .15;
+	z-index: 2;
+}
+
+#GojeMeeting {
+/*	height: 13%;*/
+	width: 10vw;
+	top: 10vh;
+	left: 37vw;
+	opacity: .15;
+	z-index: 2;
+}
+
+#CPlatter {
+	width: 10vw;
+/*	height: 6%;*/
+	top: 5vh;
+	left: 25vw;
+	opacity: .07;
+	z-index: 1;
+}
+
+
+#MayDay {
+	width: 10vw;
+/*	height: 14%;*/
+	top: 3vh;
+	left: 55vw;
+	opacity: .07;
+	z-index: 1;
+}
+
+
+
+
+
+.testsquare {
+	height: 240px;
+	width: 230px;
+	top: 50vh;
+	left: 30vw;
+}
+
+.blurimg {
+	filter: blur(4px);
+}
+
+.pushback {
+	transform: scale(.45) translate(-100px, -300px);
+	transform-origin: top left;
+	animation-duration: 1.5s;
+	transition-timing-function: ease-in-out;
+}
+
+img.comeforward {
+	z-index: 1000 !important;
+	opacity: 1 !important;
+    max-width: 40vw !important;
+    position: absolute;
+	max-height: 40vh;
+	height: auto !important;
+	width: auto !important;
+    top: 25vh !important;
+    left: 5vw !important;
+	transform: translate()
+	transition-timing-function: ease-in-out;
+}
+
+/*
+p.comeforward {
+	opacity: 1;
+}
+*/
+
+/*
+.comeforward {
+	z-index: 1000 !important;
+	opacity: 1 !important;
+	height: 700px !important;
+	position: fixed;
+	width: auto;
+	top: 15vh !important;
+	left: 25vw !important;
+	transition-timing-function: ease-in-out;
+}
+*/
+
+.makeroom {
+	transform: scale(.3);
+	position: absolute;
+	top: -100px;
+	transition-timing-function: ease-in-out;
+	animation-duration: 1s;
+}
