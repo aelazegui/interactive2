@@ -30,6 +30,7 @@ $(document).ready(function(){
 		$('.worktitles').hide();
 		$('.bodycopy').hide();
 		
+		$('img').not(this).parent('group-holder').hide();
 		$('img').not(this).addClass("pushback");
 		$(this).addClass('comeforward');
 		$(this).siblings().show();
