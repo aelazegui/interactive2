@@ -22,21 +22,15 @@ $(document).ready(function(){
 	
 
 	$('img').on('click', function (){
-
-	var selectparents = $(this).parents()
-	var uncles = selectparents.siblings();
-		
 		$('img.comeforward').removeClass('comeforward');
 		
 		$('.worktitles').hide();
 		$('.bodycopy').hide();
-		uncles.hide();
 		
 		$('img').not(this).addClass("pushback");
 		$(this).addClass('comeforward');
 		$(this).siblings().addClass('showmedem');
 		$(this).siblings().show();
-		selectparents.show();
 		$(this).siblings('.bodycopy .worktitles').show();
 	});
 
