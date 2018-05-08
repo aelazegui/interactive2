@@ -69,12 +69,33 @@ $('#button-14').on('click',function (event) {
 });
 
 //button 16
-$('#button-16').hover(
-	function(){
-	$("#button-16").addClass('bounce');
-
+$("#button-16").click(function() {
+  $('.transform').toggleClass('transform-active');
 });
 
+	
+//button 18
+$("#button-18").hover(function() {
+  $('#button-18').addClass('flash');
+});
+	
+
+//button 22
+$("#invertswitch").click(function() {
+  $('body').toggleClass('inverted');
+});
+	
+//button 23
+$("#button-23").hover(function() {
+  $('.fa-truck').toggleClass('movetruck');
+});
+	
+	
+//button 24
+$("#button-24").hover(function() {
+  $(this).toggleClass('hinge');
+});
+	
 	//$('#button-14').click(function() {
 	//	$(item).toggleClass('#button-14-active'); //number changes the speed
 	//});

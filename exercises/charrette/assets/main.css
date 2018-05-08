@@ -435,34 +435,69 @@ body {
 
 /* 16 */
 
+.transform-active {
+  background-color: #0077b1;
+  height: 400px;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
 
 #button-16 {
   background-color: rgb(246, 169, 76);
 }
 
-#button-16::before {
-}
-
-
-#button-16:hover::after {
-}
-
 /* 17 */
 
-#button-17::before {
+i.fa-heart:hover {
+	color: red;
+	animation-name: pulse;
+	animation-iteration-count: 3;
+	animation-duration: 1.5s;
 }
 
+#button-17 {
+	background-color: aquamarine;
+}
 
-#button-17:hover::after {
+@keyframes pulse {
+  from {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  50% {
+    transform: scale3d(4, 4, 4);
+  }
+
+  to {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
 }
 
 /* 18 */
 
-#button-18::before {
+#button-18 {
+	background-color: #fff442;
 }
 
+#button-18:hover{
+	animation-name: flash;
+	animation-duration: 1s;
+}
 
-#button-18:hover::after {
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
 }
 
 /* 19 */
@@ -497,43 +532,184 @@ body {
 }
 
 #button-19 {
-	background-color: ;
+	background-color: rgba(183, 200, 251, 0.76);
 }
 
 /* 20 */
 
-#button-20 {
-	$btn-color: random-color($max:200);
-  	$btn-color-dark: shade($btn-color, 40%);
-  	color: tint($btn-color);
-  	content: '';
-    @include absolute(0,0,0,0);
+#jellohello:hover {
+	animation-name: jello;
+	animation-duration: 1s;
+	animation-iteration-count: 2;
 }
 
-#button-20::before {
-    right: -50px;
-    border-right: 50px solid transparent;
-    transform: translateX(-100%);
-  }
-  
-#button-20::after {
-    left: -50px;
-    border-left: 50px solid transparent;
-    transform: translateX(100%);
+#jellohello {
+	margin-left: 25%;
+	margin-top: 10%;
+	border-bottom: 100px solid rgba(199, 29, 29, 0.88);
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 100px;
+}
+
+@keyframes jello {
+  from, 11.1%, to {
+    transform: none;
   }
 
-#button-20:hover {
-    color:
-    tint($btn-color, 75%);
-    &:before { transform: translateX(-40%); }
-    &:after { transform: translateX(40%); }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
   }
+
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
 
 /* 21 */
 
-#button-21::before {;
+#button-21:hover {
+	animation-name: around;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes around {
+  25%{
+	background-color: #2553dd;
+  }
+
+  50% {
+	background-color: #2ee9f4;
+  }
+	75% {
+	background-color: #8263dd;
+  }
+	98% {
+	background-color: #c54fba;
+  }
 }
 
 
-#button-22:hover::after {
+/* 22 */
+
+#button-22 {
+	background-color: black;
 }
+
+#n22 {
+	color: white;
+	z-index: 10;
+}
+
+#invertswitch {
+	height: 80px;
+	width: 30px;
+	background-color: white;
+	margin-left: 45%;
+	margin-top: 25px;
+	margin-right: 45%;
+}
+
+.inverted {
+	filter: invert(100%);
+}
+
+
+/* 23 */
+
+#button-23 {
+	background-color: #c3c3c5;
+	overflow-x: hidden;
+}
+
+.fa-truck {
+	color: #dbef8e;
+	transform: translateX(260px);
+}
+
+.movetruck {
+	animation-name: movetrucking;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: 2;
+}
+
+@keyframes movetrucking {
+  from{
+	 transform: translateX(260px);
+  }
+ 	to{
+	transform: translateX(-260px);
+  }
+}
+
+/* 24 */
+
+#button-24 {
+	background-color:#3577eb;
+}
+
+.hinge {
+  animation-name: hinge;
+	animation-duration: 1.75s;
+}
+
+@keyframes hinge {
+  0% {
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%, 60% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%, 80% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+
+/* 25 */
+
+#button-25 {
+	background-color:#f44836;
+}
+
+#button-25:hover {
+	border-radius: 100%;
+}
+
+/* 27 */
